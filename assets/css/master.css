@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: "Merienda", serif;
+    font-size: 18px;
+}
+body{
+ 
+    font-size: 18px;
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+   
+    >header{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        /* border: 1px solid red; */
+        justify-content: space-evenly;
+        align-items: center;
+        >*{
+            width: 15.8%;
+            height: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        >h3{
+            &:nth-of-type(2){
+                flex-grow: 1;
+                justify-content: start;
+                padding-left: 50px;
+            }
+        }
+    }
+    .maincontent{
+        width: 100%;
+        box-shadow: 0 0 30px #72A0C1;
+        >article{
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid #75a3c44d;
+            >*{
+                width: 15.8%;
+                height: 100%;
+                /* border: 1px solid red; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            >h4{
+                text-align: center;
+            }
+            >figure{
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                >*{
+                    /* border: 1px solid red; */
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                >img{
+                    width:20%;
+                    height: 50%;
+                    object-fit: contain;
+    
+                }
+                >figcaption{
+                    margin-left: 10px;
+                    height: 100%;
+                    width:90%;
+                    justify-content: start;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.load {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color:rgba(255, 0, 0, 0.532);
+    display: none; 
+}
+.me {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    bottom: 40px;
+    right: 5px;
+    z-index: 1001;
+    /* border: 1px solid red; */
+
+    >div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+
+
+        &:first-of-type {
+            border-radius: 49% 51% 46% 54% / 74% 77% 23% 26%;
+            background-color: #424965;
+            animation: anime2 infinite alternate 2s;
+
+        }
+
+        &:last-of-type {
+            background-image: url(../img/fateme.jpg);
+            background-size: cover;
+            border-radius: 49% 51% 46% 54% / 37% 31% 69% 63%;
+            animation: anime1 infinite alternate 2s;
+
+        }
+    }
+
+    &:hover {
+        >a {
+            left: -30px;
+            opacity: 1;
+
+            &:nth-of-type(2) {
+                left: -60px;
+            }
+
+            &:nth-of-type(3) {
+                /* left: -70px; */
+            }
+
+            &:nth-of-type(4) {
+                /* left: 10px; */
+            }
+        }
+    }
+
+    >a {
+        position: absolute;
+        left: 30px;
+        text-decoration: none;
+        font-size: 20px;
+        transition: 1s;
+        color: black;
+        opacity: 0;
+
+        &:first-of-type {
+            top: 0;
+
+        }
+
+        &:nth-of-type(2) {
+            top: 40px;
+        }
+
+        &:nth-of-type(3) {
+            top: 90px;
+        }
+
+        &:nth-of-type(4) {
+            top: 140px;
+        }
+
+    }
+
+
+}
+
+@keyframes anime1 {
+    to {
+        border-radius: 49% 51% 48% 52% / 46% 46% 54% 54%;
+    }
+}
+
+@keyframes anime2 {
+    to {
+        border-radius: 70% 30% 44% 56% / 46% 34% 66% 54%;
+    }
+}
