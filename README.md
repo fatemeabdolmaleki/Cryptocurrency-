@@ -1,6 +1,8 @@
 # Cryptocurrency-
- ![viewfinal](https://github.com/user-attachments/assets/ed4364d6-dc53-481b-8853-35f0c0a57017)
+
 - [Demo Project]( https://fatemeabdolmaleki.github.io/Cryptocurrency-/)
+
+ ![viewfinal](https://github.com/user-attachments/assets/ed4364d6-dc53-481b-8853-35f0c0a57017)
 
 - Developed by fateme abdolmaleki
 
